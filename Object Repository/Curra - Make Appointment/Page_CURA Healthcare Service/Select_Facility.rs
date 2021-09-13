@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Select_Facility</name>
+   <name>select_Facility</name>
    <tag></tag>
    <elementGuidId>21dc7832-5c6e-476b-9722-57d1de10476f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#combo_facility</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//select[@id='combo_facility']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#combo_facility</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Checkbox_Apply for hospital readmission_hospital_readmission</name>
+   <name>checkbox_Apply for hospital readmission_hospital_readmission</name>
    <tag></tag>
    <elementGuidId>990111ac-da40-4d73-9b18-36cce1a6c6f8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#chk_hospotal_readmission</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//input[@id='chk_hospotal_readmission']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#chk_hospotal_readmission</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
