@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Fecha_30Sept</name>
+   <name>fecha_30Sept</name>
    <tag></tag>
    <elementGuidId>7e1f2e5a-3ac6-4ca1-886c-03b975228e54</elementGuidId>
    <selectorCollection>

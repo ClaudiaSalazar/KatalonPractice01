@@ -27,16 +27,18 @@ WebUI.click(findTestObject('Cura - Home/Page_CURA Healthcare Service/button_Make
 
 WebUI.waitForPageLoad(3)
 
-WebUI.setText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Username_username'), 'John Doe')
+WebUI.setText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Username_username'), findTestData('Cura_Healthcare/Appointment_example').getValue(
+        1, 1))
 
-WebUI.setEncryptedText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Password_password'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
+WebUI.setEncryptedText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Password_password'), findTestData(
+        'Cura_Healthcare/Appointment_example').getValue(2, 1))
 
 WebUI.click(findTestObject('Cura - Login/Page_CURA Healthcare Service/button_Login'))
 
 WebUI.waitForPageLoad(3)
 
-WebUI.selectOptionByValue(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/Select_Facility'), 'Seoul CURA Healthcare Center', 
-    false)
+WebUI.selectOptionByValue(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/Select_Facility'), findTestData(
+        'Cura_Healthcare/Appointment_example').getValue(3, 1), false)
 
 WebUI.check(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/Checkbox_Apply for hospital readmission_hospital_readmission'))
 
@@ -51,7 +53,8 @@ WebUI.click(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Servic
 
 /*WebUI.setText(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date'), 
     '30/09/2021')*/
-WebUI.sendKeys(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/textarea_Comment_comment'), 'Testing Appointment 01')
+WebUI.sendKeys(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/textarea_Comment_comment'), findTestData(
+        'Cura_Healthcare/Appointment_example').getValue(4, 1))
 
 WebUI.click(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/button_Book Appointment'))
 
@@ -59,7 +62,7 @@ WebUI.waitForPageLoad(3)
 
 WebUI.verifyElementVisible(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/h2_Appointment Confirmation'))
 
-WebUI.takeScreenshot('C:\\Katalon App\\Screenshots\\test01.png')
+WebUI.takeScreenshot(findTestData('Cura_Healthcare/Appointment_example').getValue(5, 1))
 
 WebUI.closeBrowser()
 
