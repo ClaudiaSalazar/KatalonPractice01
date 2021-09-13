@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.Url)
+WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
 
 WebUI.maximizeWindow()
 
@@ -59,7 +59,7 @@ WebUI.waitForPageLoad(3)
 
 WebUI.verifyElementVisible(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/h2_Appointment Confirmation'))
 
-WebUI.takeScreenshot("C:\\Katalon App\\Screenshots\\test01.png")
+WebUI.takeScreenshot('C:\\Katalon App\\Screenshots\\test01.png')
 
 WebUI.closeBrowser()
 
