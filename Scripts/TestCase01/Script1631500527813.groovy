@@ -62,7 +62,10 @@ WebUI.waitForPageLoad(3)
 
 WebUI.verifyElementVisible(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/h2_Appointment Confirmation'))
 
-WebUI.takeScreenshot(findTestData('Cura_Healthcare/Appointment_example').getValue(5, 1))
+String path = WebUI.takeScreenshot()
+
+WebUI.takeScreenshot(findTestData(
+        'Cura_Healthcare/Appointment_example').getValue(5, 1))
 
 WebUI.closeBrowser()
 
