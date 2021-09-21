@@ -1,0 +1,65 @@
+{
+  "keywordFileContentHash": "AB0DC04519DD59EF5CC9318A299D03D1",
+  "keywordClasses": [
+    {
+      "name": "kw_App.Appointment",
+      "keywordMethods": [
+        {
+          "name": "chooseFacility",
+          "parameters": [
+            {
+              "name": "myFac",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "chooseHealhcareProgram",
+          "parameters": [
+            {
+              "name": "myProgram",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "applyReadmission",
+          "parameters": [
+            {
+              "name": "myReadmission",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "boolean",
+                "unresolvedClassName": "boolean",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

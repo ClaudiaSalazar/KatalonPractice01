@@ -1,0 +1,42 @@
+{
+  "keywordFileContentHash": "8699E75E1B50413BD20A2E9905170058",
+  "keywordClasses": [
+    {
+      "name": "kw_login.Login",
+      "keywordMethods": [
+        {
+          "name": "Login_curahealthcare",
+          "parameters": [
+            {
+              "name": "myUsername",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "myPassword",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}
