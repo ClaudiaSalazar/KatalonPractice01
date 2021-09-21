@@ -21,11 +21,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.ww3_url)
 
-WebUI.click(findTestObject('ww3/Link_TryYourself'))
+WebUI.click(findTestObject('WW3/Link_TryYourself'))
 
 WebUI.switchToWindowTitle(GlobalVariable.tryityourself_title)
 
-WebUI.verifyElementVisible(findTestObject('ww3/button_run'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('WW3/button_run'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

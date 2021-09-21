@@ -1,0 +1,43 @@
+{
+  "keywordFileContentHash": "C1E8E1227653F80BCB4C073B2A4C73F7",
+  "keywordClasses": [
+    {
+      "name": "helper_login.Login",
+      "keywordMethods": [
+        {
+          "name": "login_curasite",
+          "parameters": [
+            {
+              "name": "myUsername",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "myPassword",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

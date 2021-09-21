@@ -37,33 +37,33 @@ WebUI.click(findTestObject('Cura - Login/Page_CURA Healthcare Service/button_Log
 
 WebUI.waitForPageLoad(GlobalVariable.timeout)
 
-WebUI.selectOptionByValue(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/select_Facility'), findTestData(
+WebUI.selectOptionByValue(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/select_Facility'), findTestData(
         'test/Facility_option').getValue(3, 1), false)
 
-WebUI.check(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission'))
 
-WebUI.verifyElementChecked(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission'), 
+WebUI.check(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission'))
+
+WebUI.verifyElementChecked(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission'), 
     GlobalVariable.timeout)
 
-WebUI.uncheck(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission'))
+WebUI.uncheck(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission'))
 
-WebUI.verifyElementNotChecked(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission'), 
+WebUI.verifyElementNotChecked(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission'), 
     GlobalVariable.timeout)
 
-WebUI.click(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicaid_programs'))
+WebUI.click(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicaid_programs'))
 
-WebUI.setText(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date'), 
+WebUI.setText(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date'), 
     findTestData('test/Facility_option').getValue(6, 1))
 
-WebUI.setText(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/textarea_Comment_comment'), 'Test01')
+WebUI.setText(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/textarea_Comment_comment'), findTestData(
+        'test/Facility_option').getValue(4, 1))
 
-WebUI.click(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/button_Book Appointment'))
+WebUI.click(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/button_Book Appointment'))
 
 WebUI.waitForPageLoad(GlobalVariable.timeout)
 
 WebUI.takeScreenshot(findTestData('test/Facility_option').getValue(5, 1))
 
 WebUI.closeBrowser()
-
-WebUI.getText(findTestObject(null))
 

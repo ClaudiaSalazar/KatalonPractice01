@@ -17,55 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'helper_browser.Browser.launchUrl'(GlobalVariable.cura_url)
 
-WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+CustomKeywords.'helper_makeappointment.Appointment.clickMakeApButton'()
 
-WebUI.maximizeWindow()
+CustomKeywords.'helper_login.Login.login_curasite'(findTestData('test/Facility_option').getValue(1, 1), findTestData('test/Facility_option').getValue(
+        2, 1))
 
-WebUI.click(findTestObject('Cura - Home/Page_CURA Healthcare Service/button_MakeAppointment'))
+CustomKeywords.'helper_makeappointment.Appointment.selectFacility'(findTestData('test/Facility_option').getValue(3, 1))
 
-WebUI.waitForPageLoad(3)
+CustomKeywords.'helper_makeappointment.Appointment.checkReadmission'(true)
 
-WebUI.setText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Username_username'), findTestData('Cura_Healthcare/Appointment_example').getValue(
-        1, 1))
+CustomKeywords.'helper_makeappointment.Appointment.selectHealthcareProgram'(findTestData('test/Facility_option').getValue(
+        7, 1))
 
-WebUI.setEncryptedText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Password_password'), findTestData(
-        'Cura_Healthcare/Appointment_example').getValue(2, 1))
+CustomKeywords.'helper_makeappointment.Appointment.selectDate'(findTestData('test/Facility_option').getValue(6, 1))
 
-WebUI.click(findTestObject('Cura - Login/Page_CURA Healthcare Service/button_Login'))
+CustomKeywords.'helper_makeappointment.Appointment.addComment'(findTestData('test/Facility_option').getValue(4, 1))
 
-WebUI.waitForPageLoad(3)
-
-WebUI.selectOptionByValue(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/Select_Facility'), findTestData(
-        'Cura_Healthcare/Appointment_example').getValue(3, 1), false)
-
-WebUI.check(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/Checkbox_Apply for hospital readmission_hospital_readmission'))
-
-WebUI.verifyElementChecked(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/Checkbox_Apply for hospital readmission_hospital_readmission'), 
-    2)
-
-WebUI.click(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicare_programs'))
-
-WebUI.click(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/Calendar_Visit Date (Required)_glyphicon glyphicon-calendar'))
-
-WebUI.click(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/Fecha_30Sept'))
-
-/*WebUI.setText(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date'), 
-    '30/09/2021')*/
-WebUI.sendKeys(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/textarea_Comment_comment'), findTestData(
-        'Cura_Healthcare/Appointment_example').getValue(4, 1))
-
-WebUI.click(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/button_Book Appointment'))
-
-WebUI.waitForPageLoad(3)
-
-WebUI.verifyElementVisible(findTestObject('Curra - Make Appointment/Page_CURA Healthcare Service/h2_Appointment Confirmation'))
-
-String path = WebUI.takeScreenshot()
-
-WebUI.takeScreenshot(findTestData(
-        'Cura_Healthcare/Appointment_example').getValue(5, 1))
-
-WebUI.closeBrowser()
+CustomKeywords.'helper_makeappointment.Appointment.createAppointment'()
 
