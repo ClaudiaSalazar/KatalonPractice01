@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "2812CF2BB6D1B5FB3CDF8F5F945CE1D3",
+  "keywordClasses": [
+    {
+      "name": "helper_browser.Browser",
+      "keywordMethods": [
+        {
+          "name": "launchUrl",
+          "parameters": [
+            {
+              "name": "myUrl",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

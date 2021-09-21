@@ -17,23 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'helper_browser.Browser.launchUrl'(GlobalVariable.cura_url)
 
-CustomKeywords.'helper_makeappointment.Appointment.clickMakeApButton'()
+	          
+        for (int x = 0; x <= 5; x++) {
+            System.out.println(x);
+        }
 
-CustomKeywords.'helper_login.Login.login_curasite'(findTestData('test/Facility_option').getValue(1, 1), findTestData('test/Facility_option').getValue(
-        2, 1))
 
-CustomKeywords.'helper_makeappointment.Appointment.selectFacility'(findTestData('test/Facility_option').getValue(3, 1))
 
-CustomKeywords.'helper_makeappointment.Appointment.checkReadmission'(true)
-
-CustomKeywords.'helper_makeappointment.Appointment.selectHealthcareProgram'(findTestData('test/Facility_option').getValue(
-        7, 1))
-
-CustomKeywords.'helper_makeappointment.Appointment.selectDate'(findTestData('test/Facility_option').getValue(6, 1))
-
-CustomKeywords.'helper_makeappointment.Appointment.addComment'(findTestData('test/Facility_option').getValue(4, 1))
-
-CustomKeywords.'helper_makeappointment.Appointment.createAppointment'()
 
