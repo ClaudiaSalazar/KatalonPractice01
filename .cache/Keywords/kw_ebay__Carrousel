@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "ECC455D9B187678D3ACDE2F715594763",
+  "keywordClasses": [
+    {
+      "name": "kw_ebay.Carrousel",
+      "keywordMethods": [
+        {
+          "name": "clickingDynamicElement",
+          "parameters": [
+            {
+              "name": "articleName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

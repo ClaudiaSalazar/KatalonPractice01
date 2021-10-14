@@ -21,25 +21,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class Browser {
-	
+
 	@Keyword
 	public void loadbrowser(){
-		WebUI.openBrowser('')	
+		WebUI.openBrowser('')
 		WebUI.navigateToUrl(GlobalVariable.cura_url)
-		WebUI.maximizeWindow()		
+		WebUI.maximizeWindow()
 	}
-	
+
 	@Keyword
-	public void loadbrowser(def myUrl){
+	public void loadbrowser(myUrl){
 		WebUI.openBrowser('')
 		WebUI.navigateToUrl(myUrl)
 		WebUI.maximizeWindow()
 	}
-	
-	
-	
-	
-	
-	
-	
 }

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Practice02" time="36.483" tests="3" failures="0" errors="0">
+   <testsuite name="Practice02" tests="3" failures="0" errors="0" time="36.483" skipped="0" timestamp="2021-10-05 16:25:54" hostname="Claudia.Salazar - SalITOC033.focusservices.com" id="Test Suites/Practice/Practice02">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\claudia.salazar\\git\\KatalonPractice01\\Reports\\20211005_162547\\Practice\\Practice02\\20211005_162550"/>
+         <property name="logFiles" value="C:\\Users\\claudia.salazar\\git\\KatalonPractice01\\Reports\\20211005_162547\\Practice\\Practice02\\20211005_162550\\execution0.log"/>
+         <property name="attachments" value="C:\Katalon App\Screenshots\app02.png"/>
+         <property name="hostName" value="Claudia.Salazar - SalITOC033.focusservices.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+         <property name="browser" value="Chrome 94.0.4606.61"/>
+         <property name="hostAddress" value="192.168.0.24"/>
+         <property name="sessionId" value="d9d1ef2eb40804d9dc4d3e590c939c94"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/TestCase04" time="15.327" classname="Test Cases/TestCase04" status="PASSED">
+         <system-out><![CDATA[2021-10-05 16:25:54 - [TEST_CASE][PASSED] - Test Cases/TestCase04: Test Cases/TestCase04
+
+2021-10-05 16:25:55 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-10-05 16:25:55 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-10-05 16:25:55 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-10-05 16:25:58 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-10-05 16:25:58 - [TEST_STEP][PASSED] - navigateToUrl(cura_url): Navigate to 'https://katalon-demo-cura.herokuapp.com/' successfully
+
+2021-10-05 16:25:59 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com/' successfully
+
+2021-10-05 16:25:59 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-10-05 16:25:59 - [MESSAGE][PASSED] - Current window maximized
+
+2021-10-05 16:25:59 - [TEST_STEP][PASSED] - click(findTestObject("Cura - Home/Page_CURA Healthcare Service/button_MakeAppointment")): Object: 'Object Repository/Cura - Home/Page_CURA Healthcare Service/button_MakeAppointment' is clicked on
+
+2021-10-05 16:26:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura - Home/Page_CURA Healthcare Service/button_MakeAppointment' is clicked on
+
+2021-10-05 16:26:00 - [TEST_STEP][PASSED] - waitForPageLoad(timeout): Wait for page load successfully
+
+2021-10-05 16:26:00 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-10-05 16:26:00 - [TEST_STEP][PASSED] - setText(findTestObject("Cura - Login/Page_CURA Healthcare Service/input_Username_username"), findTestData("test/Facility_option").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Cura - Login/Page_CURA Healthcare Service/input_Username_username'
+
+2021-10-05 16:26:02 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Cura - Login/Page_CURA Healthcare Service/input_Username_username'
+
+2021-10-05 16:26:02 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Cura - Login/Page_CURA Healthcare Service/input_Password_password"), findTestData("test/Facility_option").getValue(2, 1)): Text ****** has been set on object 'Object Repository/Cura - Login/Page_CURA Healthcare Service/input_Password_password'
+
+2021-10-05 16:26:03 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Cura - Login/Page_CURA Healthcare Service/input_Password_password'
+
+2021-10-05 16:26:03 - [TEST_STEP][PASSED] - click(findTestObject("Cura - Login/Page_CURA Healthcare Service/button_Login")): Object: 'Object Repository/Cura - Login/Page_CURA Healthcare Service/button_Login' is clicked on
+
+2021-10-05 16:26:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura - Login/Page_CURA Healthcare Service/button_Login' is clicked on
+
+2021-10-05 16:26:03 - [TEST_STEP][PASSED] - waitForPageLoad(timeout): Wait for page load successfully
+
+2021-10-05 16:26:03 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-10-05 16:26:03 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Cura - Make Appointment/Page_CURA Healthcare Service/select_Facility"), findTestData("test/Facility_option").getValue(3, 1), false): All options with value 'Seoul CURA Healthcare Center' are selected in object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/select_Facility' 
+
+2021-10-05 16:26:04 - [MESSAGE][PASSED] - All options with value 'Seoul CURA Healthcare Center' are selected in object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/select_Facility' 
+
+2021-10-05 16:26:04 - [TEST_STEP][PASSED] - check(findTestObject("Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission")): Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission' is checked
+
+2021-10-05 16:26:05 - [MESSAGE][PASSED] - Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission' is checked
+
+2021-10-05 16:26:05 - [TEST_STEP][PASSED] - verifyElementChecked(findTestObject("Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission"), timeout): Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission' is checked
+
+2021-10-05 16:26:05 - [MESSAGE][PASSED] - Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission' is checked
+
+2021-10-05 16:26:05 - [TEST_STEP][PASSED] - uncheck(findTestObject("Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission")): Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission' is un-checked
+
+2021-10-05 16:26:05 - [MESSAGE][PASSED] - Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission' is un-checked
+
+2021-10-05 16:26:05 - [TEST_STEP][PASSED] - verifyElementNotChecked(findTestObject("Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission"), timeout): Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission' is not checked
+
+2021-10-05 16:26:06 - [MESSAGE][PASSED] - Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission' is not checked
+
+2021-10-05 16:26:06 - [TEST_STEP][PASSED] - click(findTestObject("Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicaid_programs")): Object: 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicaid_programs' is clicked on
+
+2021-10-05 16:26:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicaid_programs' is clicked on
+
+2021-10-05 16:26:06 - [TEST_STEP][PASSED] - setText(findTestObject("Cura - Make Appointment/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date"), findTestData("test/Facility_option").getValue(6, 1)): Text '30/09/2021' is set on object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date'
+
+2021-10-05 16:26:07 - [MESSAGE][PASSED] - Text '30/09/2021' is set on object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date'
+
+2021-10-05 16:26:07 - [TEST_STEP][PASSED] - setText(findTestObject("Cura - Make Appointment/Page_CURA Healthcare Service/textarea_Comment_comment"), findTestData("test/Facility_option").getValue(4, 1)): Text 'Testing Appointment 01' is set on object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/textarea_Comment_comment'
+
+2021-10-05 16:26:08 - [MESSAGE][PASSED] - Text 'Testing Appointment 01' is set on object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/textarea_Comment_comment'
+
+2021-10-05 16:26:08 - [TEST_STEP][PASSED] - click(findTestObject("Cura - Make Appointment/Page_CURA Healthcare Service/button_Book Appointment")): Object: 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/button_Book Appointment' is clicked on
+
+2021-10-05 16:26:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/button_Book Appointment' is clicked on
+
+2021-10-05 16:26:08 - [TEST_STEP][PASSED] - waitForPageLoad(timeout): Wait for page load successfully
+
+2021-10-05 16:26:08 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-10-05 16:26:08 - [TEST_STEP][PASSED] - takeScreenshot(findTestData("test/Facility_option").getValue(5, 1)): Taking screenshot successfully
+
+2021-10-05 16:26:09 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\Katalon App\Screenshots\app02.png]]
+
+2021-10-05 16:26:09 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-10-05 16:26:10 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TestCase05" time="8.158" classname="Test Cases/TestCase05" status="PASSED">
+         <system-out><![CDATA[2021-10-05 16:26:10 - [TEST_CASE][PASSED] - Test Cases/TestCase05: Test Cases/TestCase05
+
+2021-10-05 16:26:10 - [TEST_STEP][PASSED] - kw_browser.Browser.loadbrowser(cura_url): kw_browser.Browser.loadbrowser is PASSED
+
+2021-10-05 16:26:10 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-10-05 16:26:10 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-10-05 16:26:11 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-10-05 16:26:12 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com/' successfully
+
+2021-10-05 16:26:13 - [MESSAGE][PASSED] - Current window maximized
+
+2021-10-05 16:26:13 - [MESSAGE][PASSED] - kw_browser.Browser.loadbrowser is PASSED
+
+2021-10-05 16:26:13 - [TEST_STEP][PASSED] - kw_homepage.Homepage.initiateApp(): kw_homepage.Homepage.initiateApp is PASSED
+
+2021-10-05 16:26:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura - Home/Page_CURA Healthcare Service/button_MakeAppointment' is clicked on
+
+2021-10-05 16:26:13 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-10-05 16:26:13 - [MESSAGE][PASSED] - kw_homepage.Homepage.initiateApp is PASSED
+
+2021-10-05 16:26:13 - [TEST_STEP][PASSED] - kw_login.Login.Login_curahealthcare(findTestData("test/Facility_option").getValue(1, 1), findTestData("test/Facility_option").getValue(2, 1)): kw_login.Login.Login_curahealthcare is PASSED
+
+2021-10-05 16:26:14 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Cura - Login/Page_CURA Healthcare Service/input_Username_username'
+
+2021-10-05 16:26:14 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Cura - Login/Page_CURA Healthcare Service/input_Password_password'
+
+2021-10-05 16:26:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura - Login/Page_CURA Healthcare Service/button_Login' is clicked on
+
+2021-10-05 16:26:15 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-10-05 16:26:15 - [MESSAGE][PASSED] - kw_login.Login.Login_curahealthcare is PASSED
+
+2021-10-05 16:26:15 - [TEST_STEP][PASSED] - kw_App.Appointment.chooseFacility(findTestData("test/Facility_option").getValue(3, 1)): kw_App.Appointment.chooseFacility is PASSED
+
+2021-10-05 16:26:16 - [MESSAGE][PASSED] - All options with value 'Seoul CURA Healthcare Center' are selected in object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/select_Facility' 
+
+2021-10-05 16:26:16 - [MESSAGE][PASSED] - kw_App.Appointment.chooseFacility is PASSED
+
+2021-10-05 16:26:16 - [TEST_STEP][PASSED] - kw_App.Appointment.applyReadmission(true): kw_App.Appointment.applyReadmission is PASSED
+
+2021-10-05 16:26:16 - [MESSAGE][PASSED] - Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission' is checked
+
+2021-10-05 16:26:17 - [MESSAGE][PASSED] - Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission' is checked
+
+2021-10-05 16:26:17 - [MESSAGE][PASSED] - kw_App.Appointment.applyReadmission is PASSED
+
+2021-10-05 16:26:17 - [TEST_STEP][PASSED] - kw_App.Appointment.chooseHealhcareProgram(findTestData("test/Facility_option").getValue(7, 1)): kw_App.Appointment.chooseHealhcareProgram is PASSED
+
+2021-10-05 16:26:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicare_programs' is clicked on
+
+2021-10-05 16:26:17 - [MESSAGE][PASSED] - kw_App.Appointment.chooseHealhcareProgram is PASSED
+
+2021-10-05 16:26:17 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-10-05 16:26:18 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TestCase06" time="12.373" classname="Test Cases/TestCase06" status="PASSED">
+         <system-out><![CDATA[2021-10-05 16:26:18 - [TEST_CASE][PASSED] - Test Cases/TestCase06: Test Cases/TestCase06
+
+2021-10-05 16:26:18 - [TEST_STEP][PASSED] - kw_browser.Browser.loadbrowser(ebay_url): kw_browser.Browser.loadbrowser is PASSED
+
+2021-10-05 16:26:18 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-10-05 16:26:18 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-10-05 16:26:20 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-10-05 16:26:21 - [MESSAGE][PASSED] - Navigate to 'https://www.ebay.com' successfully
+
+2021-10-05 16:26:21 - [MESSAGE][PASSED] - Current window maximized
+
+2021-10-05 16:26:21 - [MESSAGE][PASSED] - kw_browser.Browser.loadbrowser is PASSED
+
+2021-10-05 16:26:21 - [TEST_STEP][PASSED] - ebay_helper.ebay_page.clickOnTab("Vehículos"): ebay_helper.ebay_page.clickOnTab is PASSED
+
+2021-10-05 16:26:22 - [MESSAGE][PASSED] - Object 'Vehículos' is visible
+
+2021-10-05 16:26:26 - [MESSAGE][PASSED] - Object: 'Vehículos' is clicked on
+
+2021-10-05 16:26:26 - [MESSAGE][PASSED] - ebay_helper.ebay_page.clickOnTab is PASSED
+
+2021-10-05 16:26:26 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2021-10-05 16:26:29 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-10-05 16:26:29 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-10-05 16:26:30 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-10-05 16:25:54 - [TEST_SUITE][PASSED] - Practice02: Test Cases/TestCase06]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

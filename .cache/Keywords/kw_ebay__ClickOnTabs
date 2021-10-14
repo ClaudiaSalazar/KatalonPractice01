@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "351F540D30C024A21425C1C8EAB21263",
+  "keywordClasses": [
+    {
+      "name": "kw_ebay.ClickOnTabs",
+      "keywordMethods": [
+        {
+          "name": "ClickEbayTab",
+          "parameters": [
+            {
+              "name": "tabOnEbay",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

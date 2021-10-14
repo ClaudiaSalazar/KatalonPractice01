@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>3</initValue>
+      <initValue>5</initValue>
       <name>timeout</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -33,5 +33,10 @@
       <description></description>
       <initValue>'Tryit Editor v3.7'</initValue>
       <name>tryityourself_title</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.ebay.com'</initValue>
+      <name>ebay_url</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,0 +1,37 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Practice01,Chrome 94.0.4606.71,,,2021-10-07 09:05:58,2021-10-07 09:06:45,47.565s,PASSED
+,,,,,,,
+Test Cases/cura_Healthcare/TestCase01,Chrome 94.0.4606.71,,,2021-10-07 09:05:58,2021-10-07 09:06:11,13.249s,PASSED
+helper_browser.Browser.launchUrl(cura_url),Chrome 94.0.4606.71,,,2021-10-07 09:05:58,2021-10-07 09:06:03,4.813s,PASSED
+helper_makeappointment.Appointment.clickMakeApButton(),Chrome 94.0.4606.71,,,2021-10-07 09:06:03,2021-10-07 09:06:04,0.868s,PASSED
+"helper_login.Login.login_curasite(findTestData(""test/Facility_option"").getValue(1, 1), findTestData(""test/Facility_option"").getValue(2, 1))",Chrome 94.0.4606.71,,,2021-10-07 09:06:04,2021-10-07 09:06:07,2.425s,PASSED
+"helper_makeappointment.Appointment.selectFacility(findTestData(""test/Facility_option"").getValue(3, 1))",Chrome 94.0.4606.71,,,2021-10-07 09:06:07,2021-10-07 09:06:07,0.823s,PASSED
+helper_makeappointment.Appointment.checkReadmission(true),Chrome 94.0.4606.71,,,2021-10-07 09:06:07,2021-10-07 09:06:08,0.718s,PASSED
+"helper_makeappointment.Appointment.selectHealthcareProgram(findTestData(""test/Facility_option"").getValue(7, 1))",Chrome 94.0.4606.71,,,2021-10-07 09:06:08,2021-10-07 09:06:08,0.393s,PASSED
+"helper_makeappointment.Appointment.selectDate(findTestData(""test/Facility_option"").getValue(6, 1))",Chrome 94.0.4606.71,,,2021-10-07 09:06:08,2021-10-07 09:06:09,0.736s,PASSED
+"helper_makeappointment.Appointment.addComment(findTestData(""test/Facility_option"").getValue(4, 1))",Chrome 94.0.4606.71,,,2021-10-07 09:06:09,2021-10-07 09:06:10,0.541s,PASSED
+helper_makeappointment.Appointment.createAppointment(),Chrome 94.0.4606.71,,,2021-10-07 09:06:10,2021-10-07 09:06:11,0.894s,PASSED
+closeBrowser(),Chrome 94.0.4606.71,,,2021-10-07 09:06:11,2021-10-07 09:06:11,0.690s,PASSED
+,,,,,,,
+Test Cases/ww3/TestCase02,Chrome 94.0.4606.71,,,2021-10-07 09:06:11,2021-10-07 09:06:23,11.249s,PASSED
+"openBrowser("""")",Chrome 94.0.4606.71,,,2021-10-07 09:06:12,2021-10-07 09:06:13,1.222s,PASSED
+navigateToUrl(ww3_url),Chrome 94.0.4606.71,,,2021-10-07 09:06:13,2021-10-07 09:06:17,4.472s,PASSED
+"click(findTestObject(""WW3/Link_TryYourself""))",Chrome 94.0.4606.71,,,2021-10-07 09:06:17,2021-10-07 09:06:20,2.559s,PASSED
+switchToWindowTitle(tryityourself_title),Chrome 94.0.4606.71,,,2021-10-07 09:06:20,2021-10-07 09:06:21,0.712s,PASSED
+"verifyElementVisible(findTestObject(""WW3/button_run""), STOP_ON_FAILURE)",Chrome 94.0.4606.71,,,2021-10-07 09:06:21,2021-10-07 09:06:22,1.364s,PASSED
+closeBrowser(),Chrome 94.0.4606.71,,,2021-10-07 09:06:22,2021-10-07 09:06:23,0.674s,PASSED
+,,,,,,,
+Test Cases/ebay/TestCase03,Chrome 94.0.4606.71,practice,,2021-10-07 09:06:23,2021-10-07 09:06:45,22.809s,PASSED
+kw_browser.Browser.loadbrowser(ebay_url),Chrome 94.0.4606.71,,,2021-10-07 09:06:23,2021-10-07 09:06:26,3.084s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Ebay/Search_button""), timeout)",Chrome 94.0.4606.71,,,2021-10-07 09:06:26,2021-10-07 09:06:27,1.709s,PASSED
+"searchButton02 = findTestObject(""Object Repository/Ebay/Search_button"")",Chrome 94.0.4606.71,,,2021-10-07 09:06:27,2021-10-07 09:06:28,0.045s,PASSED
+"searchButton02.addProperty(""xpath"", EQUALS, ""//input[@value='Buscar']"", true)",Chrome 94.0.4606.71,,,2021-10-07 09:06:28,2021-10-07 09:06:28,0.006s,PASSED
+"setText(findTestObject(""Object Repository/Ebay/Search_bar""), ""Laptop Lenovo"")",Chrome 94.0.4606.71,,,2021-10-07 09:06:28,2021-10-07 09:06:29,0.997s,PASSED
+"click(findTestObject(""Object Repository/Ebay/Search_button""))",Chrome 94.0.4606.71,,,2021-10-07 09:06:29,2021-10-07 09:06:35,6.030s,PASSED
+delay(3),Chrome 94.0.4606.71,,,2021-10-07 09:06:35,2021-10-07 09:06:38,3.027s,PASSED
+"setText(findTestObject(""Object Repository/Ebay/Search_bar""), ""iphone13"")",Chrome 94.0.4606.71,,,2021-10-07 09:06:38,2021-10-07 09:06:39,1.047s,PASSED
+click(searchButton02),Chrome 94.0.4606.71,,,2021-10-07 09:06:39,2021-10-07 09:06:41,2.671s,PASSED
+delay(3),Chrome 94.0.4606.71,,,2021-10-07 09:06:41,2021-10-07 09:06:44,3.007s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Ebay/Search_button""), timeout)",Chrome 94.0.4606.71,,,2021-10-07 09:06:44,2021-10-07 09:06:45,0.324s,PASSED
+"searchButton04 = modifyObjectProperty(findTestObject(""Object Repository/Ebay/Search_button""), ""xpath"", EQUALS.toString(), ""//*[@type='submit']"", true)",Chrome 94.0.4606.71,,,2021-10-07 09:06:45,2021-10-07 09:06:45,0.045s,PASSED
+closeBrowser(),Chrome 94.0.4606.71,,,2021-10-07 09:06:45,2021-10-07 09:06:45,0.700s,PASSED

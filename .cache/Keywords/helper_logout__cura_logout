@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "DBB478762A0ACF87FDD70066DBEE3D17",
+  "keywordClasses": [
+    {
+      "name": "helper_logout.cura_logout",
+      "keywordMethods": [
+        {
+          "name": "logoutFromCura",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

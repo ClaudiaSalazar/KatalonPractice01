@@ -21,11 +21,11 @@ import internal.GlobalVariable
 
 
 public class Login {
-@Keyword
-public void Login_curahealthcare(String myUsername, String myPassword) {
-	WebUI.setText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Username_username'), myUsername)
-	WebUI.setEncryptedText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Password_password'), myPassword)
-	WebUI.click(findTestObject('Cura - Login/Page_CURA Healthcare Service/button_Login'))
-	WebUI.waitForPageLoad(GlobalVariable.timeout)
-}
+	@Keyword
+	public void Login_curahealthcare(String myUsername, String myPassword) {
+		WebUI.setText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Username_username'), myUsername)
+		WebUI.setEncryptedText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Password_password'), myPassword)
+		WebUI.click(findTestObject('Cura - Login/Page_CURA Healthcare Service/button_Login'))
+		WebUI.waitForPageLoad(GlobalVariable.timeout)
+	}
 }

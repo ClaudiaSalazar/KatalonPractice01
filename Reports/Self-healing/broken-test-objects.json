@@ -1,3 +1,14 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Ebay/Search_button",
+      "brokenLocator": "//*[@id \u003d \u0027gh-btn\u0027]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "//*[@id \u003d \u0027gh-btn\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Ebay/Search_button_XPATH.png"
+    }
+  ]
 }
