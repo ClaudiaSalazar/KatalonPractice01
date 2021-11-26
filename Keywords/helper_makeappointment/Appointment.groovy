@@ -1,22 +1,10 @@
 package helper_makeappointment
 
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 import com.kms.katalon.core.annotation.Keyword
-import com.kms.katalon.core.checkpoint.Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testcase.TestCase
-import com.kms.katalon.core.testdata.TestData
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
@@ -34,7 +22,7 @@ public class Appointment {
 	}
 
 	@Keyword
-	public void checkReadmission(boolean isChecked) {
+	public void checkReadmission(String isChecked) {
 
 		if (isChecked == true) {
 
@@ -44,7 +32,7 @@ public class Appointment {
 					GlobalVariable.timeout)
 		}else {
 
-			WebUI.verifyElementUnchecked(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission'),
+			WebUI.verifyElementNotChecked(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission'),
 					GlobalVariable.timeout)
 		}
 	}
@@ -56,14 +44,14 @@ public class Appointment {
 			case "Medicare":
 				WebUI.click(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicare_programs'))
 				break;
-			case "Medicard":
+			case "Medicaid":
 				WebUI.click(findTestObject('Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicaid_programs'))
 				break;
 			case "None":
 				WebUI.click(findTestObject('Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_None_programs'))
 				break;
 			default:
-				println("No matching case found")
+				System.out.println("No matching case found " + myProgram)
 				break;
 		}
 	}
@@ -86,6 +74,16 @@ public class Appointment {
 		WebUI.click(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/button_Book Appointment'))
 		WebUI.waitForPageLoad(GlobalVariable.timeout)
 		WebUI.verifyElementVisible(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/h2_Appointment Confirmation'))
+	}
+
+	@Keyword
+	public def verifyAppointmentSubmitted() {
+		WebUI.waitForPageLoad(GlobalVariable.timeout)
+		WebUI.takeScreenshot()
+		WebUI.verifyElementVisible(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/title_appointmentConfirmation'), FailureHandling.CONTINUE_ON_FAILURE)
+
+		WebUI.click(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/button_goToHomepage'))
+		WebUI.delay(3)
 	}
 }
 

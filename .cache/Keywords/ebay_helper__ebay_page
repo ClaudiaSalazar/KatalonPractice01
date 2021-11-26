@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "7F253EC644790C6827B73A3046D2C0A1",
+  "keywordClasses": [
+    {
+      "name": "ebay_helper.ebay_page",
+      "keywordMethods": [
+        {
+          "name": "clickOnTab",
+          "parameters": [
+            {
+              "name": "tabName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

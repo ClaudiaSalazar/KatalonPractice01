@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "AB0DC04519DD59EF5CC9318A299D03D1",
+  "keywordFileContentHash": "8523D7A2BC4DB6E27C1D612870036290",
   "keywordClasses": [
     {
       "name": "kw_App.Appointment",
@@ -20,7 +20,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "chooseHealhcareProgram",
@@ -38,7 +39,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "applyReadmission",
@@ -47,8 +49,27 @@
               "name": "myReadmission",
               "initialExpression": "",
               "type": {
-                "fullClassName": "boolean",
-                "unresolvedClassName": "boolean",
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "setDate",
+          "parameters": [
+            {
+              "name": "myDate",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
                 "isArray": false,
                 "isGnericsPlaceHolder": false,
                 "hasImmutableClassName": true,
@@ -56,10 +77,40 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "enterComment",
+          "parameters": [
+            {
+              "name": "myComment",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "submitAppointment",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "validateAppointment",
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

@@ -6,11 +6,11 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>b22ba181-6708-4ce3-9079-f2aa2d0478ea</dataFileGUID>
-   <dataSourceUrl>C:\Users\claudia.salazar\git\KatalonPractice01\Data Files\Cura_Healthcare\Testcase01.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Katalon App\myfiles\Suite01_Appointment.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>TC01</sheetName>
+   <sheetName>Sheet1</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

@@ -1,0 +1,40 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Practice02,Chrome 94.0.4606.61,,,2021-10-05 16:25:54,2021-10-05 16:26:30,36.155s,PASSED
+,,,,,,,
+Test Cases/TestCase04,Chrome 94.0.4606.61,,,2021-10-05 16:25:54,2021-10-05 16:26:10,15.327s,PASSED
+"openBrowser("""")",Chrome 94.0.4606.61,,,2021-10-05 16:25:55,2021-10-05 16:25:58,3.186s,PASSED
+navigateToUrl(cura_url),Chrome 94.0.4606.61,,,2021-10-05 16:25:58,2021-10-05 16:25:59,1.474s,PASSED
+maximizeWindow(),Chrome 94.0.4606.61,,,2021-10-05 16:25:59,2021-10-05 16:25:59,0.159s,PASSED
+"click(findTestObject(""Cura - Home/Page_CURA Healthcare Service/button_MakeAppointment""))",Chrome 94.0.4606.61,,,2021-10-05 16:25:59,2021-10-05 16:26:00,0.764s,PASSED
+waitForPageLoad(timeout),Chrome 94.0.4606.61,,,2021-10-05 16:26:00,2021-10-05 16:26:00,0.206s,PASSED
+"setText(findTestObject(""Cura - Login/Page_CURA Healthcare Service/input_Username_username""), findTestData(""test/Facility_option"").getValue(1, 1))",Chrome 94.0.4606.61,,,2021-10-05 16:26:00,2021-10-05 16:26:02,1.681s,PASSED
+"setEncryptedText(findTestObject(""Cura - Login/Page_CURA Healthcare Service/input_Password_password""), findTestData(""test/Facility_option"").getValue(2, 1))",Chrome 94.0.4606.61,,,2021-10-05 16:26:02,2021-10-05 16:26:03,0.587s,PASSED
+"click(findTestObject(""Cura - Login/Page_CURA Healthcare Service/button_Login""))",Chrome 94.0.4606.61,,,2021-10-05 16:26:03,2021-10-05 16:26:03,0.645s,PASSED
+waitForPageLoad(timeout),Chrome 94.0.4606.61,,,2021-10-05 16:26:03,2021-10-05 16:26:03,0.098s,PASSED
+"selectOptionByValue(findTestObject(""Cura - Make Appointment/Page_CURA Healthcare Service/select_Facility""), findTestData(""test/Facility_option"").getValue(3, 1), false)",Chrome 94.0.4606.61,,,2021-10-05 16:26:03,2021-10-05 16:26:04,0.812s,PASSED
+"check(findTestObject(""Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission""))",Chrome 94.0.4606.61,,,2021-10-05 16:26:04,2021-10-05 16:26:05,0.411s,PASSED
+"verifyElementChecked(findTestObject(""Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission""), timeout)",Chrome 94.0.4606.61,,,2021-10-05 16:26:05,2021-10-05 16:26:05,0.349s,PASSED
+"uncheck(findTestObject(""Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission""))",Chrome 94.0.4606.61,,,2021-10-05 16:26:05,2021-10-05 16:26:05,0.378s,PASSED
+"verifyElementNotChecked(findTestObject(""Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission""), timeout)",Chrome 94.0.4606.61,,,2021-10-05 16:26:05,2021-10-05 16:26:06,0.326s,PASSED
+"click(findTestObject(""Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicaid_programs""))",Chrome 94.0.4606.61,,,2021-10-05 16:26:06,2021-10-05 16:26:06,0.373s,PASSED
+"setText(findTestObject(""Cura - Make Appointment/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date""), findTestData(""test/Facility_option"").getValue(6, 1))",Chrome 94.0.4606.61,,,2021-10-05 16:26:06,2021-10-05 16:26:07,0.760s,PASSED
+"setText(findTestObject(""Cura - Make Appointment/Page_CURA Healthcare Service/textarea_Comment_comment""), findTestData(""test/Facility_option"").getValue(4, 1))",Chrome 94.0.4606.61,,,2021-10-05 16:26:07,2021-10-05 16:26:08,0.847s,PASSED
+"click(findTestObject(""Cura - Make Appointment/Page_CURA Healthcare Service/button_Book Appointment""))",Chrome 94.0.4606.61,,,2021-10-05 16:26:08,2021-10-05 16:26:08,0.512s,PASSED
+waitForPageLoad(timeout),Chrome 94.0.4606.61,,,2021-10-05 16:26:08,2021-10-05 16:26:08,0.029s,PASSED
+"takeScreenshot(findTestData(""test/Facility_option"").getValue(5, 1))",Chrome 94.0.4606.61,,,2021-10-05 16:26:08,2021-10-05 16:26:09,0.597s,PASSED
+closeBrowser(),Chrome 94.0.4606.61,,,2021-10-05 16:26:09,2021-10-05 16:26:10,0.754s,PASSED
+,,,,,,,
+Test Cases/TestCase05,Chrome 94.0.4606.61,,,2021-10-05 16:26:10,2021-10-05 16:26:18,8.158s,PASSED
+kw_browser.Browser.loadbrowser(cura_url),Chrome 94.0.4606.61,,,2021-10-05 16:26:10,2021-10-05 16:26:13,2.447s,PASSED
+kw_homepage.Homepage.initiateApp(),Chrome 94.0.4606.61,,,2021-10-05 16:26:13,2021-10-05 16:26:13,0.739s,PASSED
+"kw_login.Login.Login_curahealthcare(findTestData(""test/Facility_option"").getValue(1, 1), findTestData(""test/Facility_option"").getValue(2, 1))",Chrome 94.0.4606.61,,,2021-10-05 16:26:13,2021-10-05 16:26:15,1.829s,PASSED
+"kw_App.Appointment.chooseFacility(findTestData(""test/Facility_option"").getValue(3, 1))",Chrome 94.0.4606.61,,,2021-10-05 16:26:15,2021-10-05 16:26:16,0.784s,PASSED
+kw_App.Appointment.applyReadmission(true),Chrome 94.0.4606.61,,,2021-10-05 16:26:16,2021-10-05 16:26:17,0.674s,PASSED
+"kw_App.Appointment.chooseHealhcareProgram(findTestData(""test/Facility_option"").getValue(7, 1))",Chrome 94.0.4606.61,,,2021-10-05 16:26:17,2021-10-05 16:26:17,0.378s,PASSED
+closeBrowser(),Chrome 94.0.4606.61,,,2021-10-05 16:26:17,2021-10-05 16:26:18,0.832s,PASSED
+,,,,,,,
+Test Cases/TestCase06,Chrome 94.0.4606.61,,,2021-10-05 16:26:18,2021-10-05 16:26:30,12.373s,PASSED
+kw_browser.Browser.loadbrowser(ebay_url),Chrome 94.0.4606.61,,,2021-10-05 16:26:18,2021-10-05 16:26:21,2.956s,PASSED
+"ebay_helper.ebay_page.clickOnTab(""Vehículos"")",Chrome 94.0.4606.61,,,2021-10-05 16:26:21,2021-10-05 16:26:26,4.496s,PASSED
+delay(3),Chrome 94.0.4606.61,,,2021-10-05 16:26:26,2021-10-05 16:26:29,3.026s,PASSED
+closeBrowser(),Chrome 94.0.4606.61,,,2021-10-05 16:26:29,2021-10-05 16:26:30,1.392s,PASSED

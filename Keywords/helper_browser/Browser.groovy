@@ -25,8 +25,8 @@ public class Browser {
 	@Keyword
 	public void launchUrl(String myUrl) {
 
-		WebUI.openBrowser('')
+		//WebUI.openBrowser('')
+		//WebUI.maximizeWindow()
 		WebUI.navigateToUrl(GlobalVariable.cura_url)
-		WebUI.maximizeWindow()
 	}
 }

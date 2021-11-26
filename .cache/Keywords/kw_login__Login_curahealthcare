@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "8699E75E1B50413BD20A2E9905170058",
+  "keywordFileContentHash": "D81D89CB06EA5036D2557B3D3F713656",
   "keywordClasses": [
     {
       "name": "kw_login.Login",
@@ -33,10 +33,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

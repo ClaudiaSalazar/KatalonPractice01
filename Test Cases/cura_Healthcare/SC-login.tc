@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SC-login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c9ee508f-2d39-4444-9a72-ac1d7cd79d5a</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>940a552c-2129-4896-90b0-5488845d87f5</id>
+      <masked>false</masked>
+      <name>lcUser</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>72e960fc-edad-4346-8332-060190788949</id>
+      <masked>false</masked>
+      <name>lcPassword</name>
+   </variable>
+</TestCaseEntity>

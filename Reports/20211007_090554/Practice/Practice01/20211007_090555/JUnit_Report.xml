@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Practice01" time="47.828" tests="3" failures="0" errors="0">
+   <testsuite name="Practice01" tests="3" failures="0" errors="0" time="47.828" skipped="0" timestamp="2021-10-07 09:05:58" hostname="Claudia.Salazar - SalITOC033.focusservices.com" id="Test Suites/Practice/Practice01">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\claudia.salazar\\git\\KatalonPractice01\\Reports\\20211007_090554\\Practice\\Practice01\\20211007_090555"/>
+         <property name="logFiles" value="C:\\Users\\claudia.salazar\\git\\KatalonPractice01\\Reports\\20211007_090554\\Practice\\Practice01\\20211007_090555\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Claudia.Salazar - SalITOC033.focusservices.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+         <property name="browser" value="Chrome 94.0.4606.71"/>
+         <property name="hostAddress" value="192.168.0.23"/>
+         <property name="sessionId" value="5975144c0078b0e8597f948884a00996"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/cura_Healthcare/TestCase01" time="13.249" classname="Test Cases/cura_Healthcare/TestCase01" status="PASSED">
+         <system-out><![CDATA[2021-10-07 09:05:58 - [TEST_CASE][PASSED] - Test Cases/cura_Healthcare/TestCase01: Test Cases/cura_Healthcare/TestCase01
+
+2021-10-07 09:05:58 - [TEST_STEP][PASSED] - helper_browser.Browser.launchUrl(cura_url): helper_browser.Browser.launchUrl is PASSED
+
+2021-10-07 09:05:59 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-10-07 09:05:59 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-10-07 09:06:01 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-10-07 09:06:03 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com/' successfully
+
+2021-10-07 09:06:03 - [MESSAGE][PASSED] - Current window maximized
+
+2021-10-07 09:06:03 - [MESSAGE][PASSED] - helper_browser.Browser.launchUrl is PASSED
+
+2021-10-07 09:06:03 - [TEST_STEP][PASSED] - helper_makeappointment.Appointment.clickMakeApButton(): helper_makeappointment.Appointment.clickMakeApButton is PASSED
+
+2021-10-07 09:06:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura - Home/Page_CURA Healthcare Service/button_MakeAppointment' is clicked on
+
+2021-10-07 09:06:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-10-07 09:06:04 - [MESSAGE][PASSED] - helper_makeappointment.Appointment.clickMakeApButton is PASSED
+
+2021-10-07 09:06:04 - [TEST_STEP][PASSED] - helper_login.Login.login_curasite(findTestData("test/Facility_option").getValue(1, 1), findTestData("test/Facility_option").getValue(2, 1)): helper_login.Login.login_curasite is PASSED
+
+2021-10-07 09:06:05 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Cura - Login/Page_CURA Healthcare Service/input_Username_username'
+
+2021-10-07 09:06:06 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Cura - Login/Page_CURA Healthcare Service/input_Password_password'
+
+2021-10-07 09:06:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura - Login/Page_CURA Healthcare Service/button_Login' is clicked on
+
+2021-10-07 09:06:07 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-10-07 09:06:07 - [MESSAGE][PASSED] - helper_login.Login.login_curasite is PASSED
+
+2021-10-07 09:06:07 - [TEST_STEP][PASSED] - helper_makeappointment.Appointment.selectFacility(findTestData("test/Facility_option").getValue(3, 1)): helper_makeappointment.Appointment.selectFacility is PASSED
+
+2021-10-07 09:06:07 - [MESSAGE][PASSED] - All options with value 'Seoul CURA Healthcare Center' are selected in object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/Select_Facility' 
+
+2021-10-07 09:06:07 - [MESSAGE][PASSED] - helper_makeappointment.Appointment.selectFacility is PASSED
+
+2021-10-07 09:06:07 - [TEST_STEP][PASSED] - helper_makeappointment.Appointment.checkReadmission(true): helper_makeappointment.Appointment.checkReadmission is PASSED
+
+2021-10-07 09:06:08 - [MESSAGE][PASSED] - Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission' is checked
+
+2021-10-07 09:06:08 - [MESSAGE][PASSED] - Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/checkbox_Apply for hospital readmission_hospital_readmission' is checked
+
+2021-10-07 09:06:08 - [MESSAGE][PASSED] - helper_makeappointment.Appointment.checkReadmission is PASSED
+
+2021-10-07 09:06:08 - [TEST_STEP][PASSED] - helper_makeappointment.Appointment.selectHealthcareProgram(findTestData("test/Facility_option").getValue(7, 1)): helper_makeappointment.Appointment.selectHealthcareProgram is PASSED
+
+2021-10-07 09:06:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicaid_programs' is clicked on
+
+2021-10-07 09:06:08 - [MESSAGE][PASSED] - helper_makeappointment.Appointment.selectHealthcareProgram is PASSED
+
+2021-10-07 09:06:08 - [TEST_STEP][PASSED] - helper_makeappointment.Appointment.selectDate(findTestData("test/Facility_option").getValue(6, 1)): helper_makeappointment.Appointment.selectDate is PASSED
+
+2021-10-07 09:06:09 - [MESSAGE][PASSED] - Text '30/09/2021' is set on object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date'
+
+2021-10-07 09:06:09 - [MESSAGE][PASSED] - helper_makeappointment.Appointment.selectDate is PASSED
+
+2021-10-07 09:06:09 - [TEST_STEP][PASSED] - helper_makeappointment.Appointment.addComment(findTestData("test/Facility_option").getValue(4, 1)): helper_makeappointment.Appointment.addComment is PASSED
+
+2021-10-07 09:06:10 - [MESSAGE][PASSED] - Keys 'Testing Appointment 01' sent to object: 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/textarea_Comment_comment'
+
+2021-10-07 09:06:10 - [MESSAGE][PASSED] - helper_makeappointment.Appointment.addComment is PASSED
+
+2021-10-07 09:06:10 - [TEST_STEP][PASSED] - helper_makeappointment.Appointment.createAppointment(): helper_makeappointment.Appointment.createAppointment is PASSED
+
+2021-10-07 09:06:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/button_Book Appointment' is clicked on
+
+2021-10-07 09:06:10 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2021-10-07 09:06:11 - [MESSAGE][PASSED] - Object 'Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/h2_Appointment Confirmation' is visible
+
+2021-10-07 09:06:11 - [MESSAGE][PASSED] - helper_makeappointment.Appointment.createAppointment is PASSED
+
+2021-10-07 09:06:11 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-10-07 09:06:11 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ww3/TestCase02" time="11.249" classname="Test Cases/ww3/TestCase02" status="PASSED">
+         <system-out><![CDATA[2021-10-07 09:06:11 - [TEST_CASE][PASSED] - Test Cases/ww3/TestCase02: Test Cases/ww3/TestCase02
+
+2021-10-07 09:06:12 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-10-07 09:06:12 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-10-07 09:06:12 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-10-07 09:06:13 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-10-07 09:06:13 - [TEST_STEP][PASSED] - navigateToUrl(ww3_url): Navigate to 'https://www.w3schools.com/js/js_intro.asp' successfully
+
+2021-10-07 09:06:17 - [MESSAGE][PASSED] - Navigate to 'https://www.w3schools.com/js/js_intro.asp' successfully
+
+2021-10-07 09:06:17 - [TEST_STEP][PASSED] - click(findTestObject("WW3/Link_TryYourself")): Object: 'Object Repository/WW3/Link_TryYourself' is clicked on
+
+2021-10-07 09:06:20 - [MESSAGE][PASSED] - Object: 'Object Repository/WW3/Link_TryYourself' is clicked on
+
+2021-10-07 09:06:20 - [TEST_STEP][PASSED] - switchToWindowTitle(tryityourself_title): Switched to window with title: 'Tryit Editor v3.7'
+
+2021-10-07 09:06:21 - [MESSAGE][PASSED] - Switched to window with title: 'Tryit Editor v3.7'
+
+2021-10-07 09:06:21 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("WW3/button_run"), STOP_ON_FAILURE): Object 'Object Repository/WW3/button_run' is visible
+
+2021-10-07 09:06:22 - [MESSAGE][PASSED] - Object 'Object Repository/WW3/button_run' is visible
+
+2021-10-07 09:06:22 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-10-07 09:06:23 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ebay/TestCase03" time="22.809" classname="Test Cases/ebay/TestCase03" status="PASSED">
+         <system-out><![CDATA[2021-10-07 09:06:23 - [TEST_CASE][PASSED] - Test Cases/ebay/TestCase03: Test Cases/ebay/TestCase03
+
+2021-10-07 09:06:23 - [TEST_STEP][PASSED] - kw_browser.Browser.loadbrowser(ebay_url): kw_browser.Browser.loadbrowser is PASSED
+
+2021-10-07 09:06:23 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-10-07 09:06:23 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-10-07 09:06:24 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-10-07 09:06:26 - [MESSAGE][PASSED] - Navigate to 'https://www.ebay.com' successfully
+
+2021-10-07 09:06:26 - [MESSAGE][PASSED] - Current window maximized
+
+2021-10-07 09:06:26 - [MESSAGE][PASSED] - kw_browser.Browser.loadbrowser is PASSED
+
+2021-10-07 09:06:26 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Object Repository/Ebay/Search_button"), timeout): Object 'Object Repository/Ebay/Search_button' is visible
+
+2021-10-07 09:06:27 - [MESSAGE][PASSED] - Object 'Object Repository/Ebay/Search_button' is visible
+
+2021-10-07 09:06:27 - [TEST_STEP][PASSED] - searchButton02 = findTestObject("Object Repository/Ebay/Search_button"): null
+
+2021-10-07 09:06:28 - [TEST_STEP][PASSED] - searchButton02.addProperty("xpath", EQUALS, "//input[@value='Buscar']", true): null
+
+2021-10-07 09:06:28 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Ebay/Search_bar"), "Laptop Lenovo"): Text 'Laptop Lenovo' is set on object 'Object Repository/Ebay/Search_bar'
+
+2021-10-07 09:06:29 - [MESSAGE][PASSED] - Text 'Laptop Lenovo' is set on object 'Object Repository/Ebay/Search_bar'
+
+2021-10-07 09:06:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Ebay/Search_button")): Object: 'Object Repository/Ebay/Search_button' is clicked on
+
+2021-10-07 09:06:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Ebay/Search_button' is clicked on
+
+2021-10-07 09:06:35 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2021-10-07 09:06:38 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-10-07 09:06:38 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Ebay/Search_bar"), "iphone13"): Text 'iphone13' is set on object 'Object Repository/Ebay/Search_bar'
+
+2021-10-07 09:06:39 - [MESSAGE][PASSED] - Text 'iphone13' is set on object 'Object Repository/Ebay/Search_bar'
+
+2021-10-07 09:06:39 - [TEST_STEP][PASSED] - click(searchButton02): Object: 'Object Repository/Ebay/Search_button' is clicked on
+
+2021-10-07 09:06:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Ebay/Search_button' is clicked on
+
+2021-10-07 09:06:41 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2021-10-07 09:06:44 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2021-10-07 09:06:44 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Object Repository/Ebay/Search_button"), timeout): Object 'Object Repository/Ebay/Search_button' is visible
+
+2021-10-07 09:06:45 - [MESSAGE][PASSED] - Object 'Object Repository/Ebay/Search_button' is visible
+
+2021-10-07 09:06:45 - [TEST_STEP][PASSED] - searchButton04 = modifyObjectProperty(findTestObject("Object Repository/Ebay/Search_button"), "xpath", EQUALS.toString(), "//*[@type='submit']", true): Modify property of object successfully
+
+2021-10-07 09:06:45 - [MESSAGE][PASSED] - Modify property of object successfully
+
+2021-10-07 09:06:45 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-10-07 09:06:45 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-10-07 09:05:58 - [TEST_SUITE][PASSED] - Practice01: Test Cases/ebay/TestCase03]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
