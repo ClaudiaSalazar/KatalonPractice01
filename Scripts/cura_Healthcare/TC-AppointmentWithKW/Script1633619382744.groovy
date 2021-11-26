@@ -26,7 +26,7 @@ CustomKeywords.'helper_login.Login.login_curasite'(findTestData('test/Facility_o
 
 CustomKeywords.'helper_makeappointment.Appointment.selectFacility'(findTestData('test/Facility_option').getValue(3, 1))
 
-CustomKeywords.'helper_makeappointment.Appointment.checkReadmission'(true)
+CustomKeywords.'helper_makeappointment.Appointment.checkReadmission'('true')
 
 CustomKeywords.'helper_makeappointment.Appointment.selectHealthcareProgram'(findTestData('test/Facility_option').getValue(
         7, 1))

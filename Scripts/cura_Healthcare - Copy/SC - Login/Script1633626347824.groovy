@@ -28,14 +28,12 @@ WebUI.click(findTestObject('Cura - Home/Page_CURA Healthcare Service/button_Make
 
 WebUI.waitForPageLoad(GlobalVariable.timeout)
 
-
 //login
-WebUI.setText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Username_username'), findTestData('test/Facility_option').getValue(
-		1, 1))
+WebUI.setText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Username_username'), lcUser)
 
-WebUI.setEncryptedText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Password_password'), findTestData(
-		'test/Facility_option').getValue(2, 1))
+WebUI.setEncryptedText(findTestObject('Cura - Login/Page_CURA Healthcare Service/input_Password_password'), lcPassword)
 
 WebUI.click(findTestObject('Cura - Login/Page_CURA Healthcare Service/button_Login'))
 
 WebUI.waitForPageLoad(GlobalVariable.timeout)
+

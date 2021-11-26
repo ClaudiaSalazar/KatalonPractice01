@@ -21,4 +21,5 @@ CustomKeywords.'helper_browser.Browser.launchUrl'(GlobalVariable.cura_url)
 
 CustomKeywords.'helper_makeappointment.Appointment.clickMakeApButton'()
 
-CustomKeywords.'helper_login.Login.login_curasite'(GlobalVariable.username, GlobalVariable.password)
+CustomKeywords.'helper_login.Login.login_curasite'(lcUser, lcPassword)
+

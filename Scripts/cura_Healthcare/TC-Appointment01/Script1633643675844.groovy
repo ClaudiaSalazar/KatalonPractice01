@@ -17,13 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('cura_Healthcare/SC-login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('cura_Healthcare - Copy/SC - Login'), [('lcUser') : GlobalVariable.username, ('lcPassword') : GlobalVariable.password], 
+    FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(GlobalVariable.timeout)
 
-WebUI.callTestCase(findTestCase('cura_Healthcare/SC-MakeAppointment'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('cura_Healthcare - Copy/SC - makeAppointment'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('cura_Healthcare/SC-Verification'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('cura_Healthcare - Copy/SC - VerifiyAppointment'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

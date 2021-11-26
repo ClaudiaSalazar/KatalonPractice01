@@ -5,4 +5,18 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>8be4caf4-c907-4de7-8b9a-03777a59646f</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>631bc4fc-71ed-4751-abd3-8668abdc5b28</id>
+      <masked>false</masked>
+      <name>lcUser</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bb8278c7-44d1-4309-8f46-d767b79235ae</id>
+      <masked>false</masked>
+      <name>lcPassword</name>
+   </variable>
 </TestCaseEntity>

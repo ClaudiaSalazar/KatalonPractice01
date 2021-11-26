@@ -16,11 +16,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.annotation.TearDown
+import com.kms.katalon.core.annotation.SetUp
 
 
-
-@com.kms.katalon.core.annotation.SetUp
-def iniating() {
+@SetUp
+def initiating() {
 	
 	CustomKeywords.'helper_browser.Browser.launchUrl'(GlobalVariable.cura_url)
 	
@@ -38,24 +39,22 @@ def ending() {
 	
 }
 
-TestData excelfile = findTestData('Cura_Healthcare/Appointment_example')
+TestData excelFile = findTestData('Cura_Healthcare/Appointment_example')
 
+println(excelFile.getRowNumbers())
 
+for(int i=1; i<= excelFile.getRowNumbers(); i++) {
 
-for(int i=1; i<=3; i++) {
+	
+CustomKeywords.'helper_makeappointment.Appointment.selectFacility'(excelFile.getValue("Facility", i))
 
-CustomKeywords.'helper_makeappointment.Appointment.selectFacility'(excelfile.getValue("Facility", i))
+CustomKeywords.'helper_makeappointment.Appointment.checkReadmission'(excelFile.getValue("Hospital_readmission", i))
 
-CustomKeywords.'helper_makeappointment.Appointment.checkReadmission'(findTestData('Cura_Healthcare/Appointment_example').getValue(
-        "Hospital_readmission", i))
+CustomKeywords.'helper_makeappointment.Appointment.selectHealthcareProgram'(excelFile.getValue("Healthcare_program", i))
 
-CustomKeywords.'helper_makeappointment.Appointment.selectHealthcareProgram'(findTestData('Cura_Healthcare/Appointment_example').getValue(
-        "Healthcare_program", i))
+CustomKeywords.'helper_makeappointment.Appointment.selectDate'(excelFile.getValue("Visit_Date", i))
 
-CustomKeywords.'helper_makeappointment.Appointment.selectDate'(findTestData('Cura_Healthcare/Appointment_example').getValue(
-        "Visit_Date", i))
-
-CustomKeywords.'helper_makeappointment.Appointment.addComment'(findTestData('Data Files/Cura_Healthcare/Appointment_example').getValue("Comment", 3))
+CustomKeywords.'helper_makeappointment.Appointment.addComment'(excelFile.getValue("Comment", i))
 
 CustomKeywords.'helper_makeappointment.Appointment.createAppointment'()
 

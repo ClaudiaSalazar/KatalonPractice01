@@ -44,14 +44,14 @@ public class Appointment {
 			case "Medicare":
 				WebUI.click(findTestObject('Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicare_programs'))
 				break;
-			case "Medicard":
+			case "Medicaid":
 				WebUI.click(findTestObject('Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_Medicaid_programs'))
 				break;
 			case "None":
 				WebUI.click(findTestObject('Object Repository/Cura - Make Appointment/Page_CURA Healthcare Service/radiobutton_None_programs'))
 				break;
 			default:
-				println("No matching case found")
+				System.out.println("No matching case found " + myProgram)
 				break;
 		}
 	}
