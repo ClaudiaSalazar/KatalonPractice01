@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-AppointmentWithKW 04</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f1a9dd35-7252-4e8e-b661-e52bfb5bbf28</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0269380f-5818-4621-99fc-70d8c91ea634</id>
+      <masked>false</masked>
+      <name>lcFacility</name>
+   </variable>
+   <variable>
+      <defaultValue>'FALSE'</defaultValue>
+      <description></description>
+      <id>54c87657-c8c1-4ff2-816d-786b6ad518f1</id>
+      <masked>false</masked>
+      <name>lcHospital_read</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5266a42e-7f4d-4a75-b9b2-7dedc9d0cdcb</id>
+      <masked>false</masked>
+      <name>lcHealthcare_program</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9d8dfc30-6fe6-40a5-bf64-912fd3729cde</id>
+      <masked>false</masked>
+      <name>lcVisit_Date</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5a85c3d1-5d3f-4c4a-b98a-d312ca473d7f</id>
+      <masked>false</masked>
+      <name>lcComment</name>
+   </variable>
+</TestCaseEntity>
