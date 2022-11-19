@@ -1,11 +1,11 @@
 {
-  "keywordFileContentHash": "6485EFF003D5A9B0FC540FA4A46804CD",
+  "keywordFileContentHash": "64CF9C2EED3593A62C80A899920F3A94",
   "keywordClasses": [
     {
-      "name": "kw_ebay.Carrousel",
+      "name": "kw_ebay.Carrousel_updated",
       "keywordMethods": [
         {
-          "name": "clickingDynamicElementUpdated",
+          "name": "clickingDynamicElement",
           "parameters": [
             {
               "name": "articleName",

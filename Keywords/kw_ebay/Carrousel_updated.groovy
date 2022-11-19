@@ -22,16 +22,13 @@ import internal.GlobalVariable
 
 import selectors.Ebay_selectors
 
-public class Carrousel {
+public class Carrousel_updated {
 
 	private def contructXpath01(String articleName) {
 
 		return String.format(Ebay_selectors.dynamicArticleXpath, articleName)
 	}
 
-	private def constructXpath02(String articleName) {
-		return String.format(Ebay_selectors.dynamicOfferXpath, articleName)
-	}
 
 
 	private def creatingArticle01(String articleName) {
@@ -40,28 +37,16 @@ public class Carrousel {
 		return offerName01
 	}
 
-	private def creatingArticle02(String articleName) {
-		TestObject offerName02 =  new TestObject(articleName)
-		offerName02.addProperty("xpath", ConditionType.EQUALS, constructXpath02(articleName), true)
-		return offerName02
-	}
 
 	private def foundRealXpath(String articleName) {
 		boolean isFound
 		TestObject selection01 = creatingArticle01(articleName)
-		TestObject selection02 = creatingArticle02(articleName)
 
-		isFound = WebUI.verifyElementPresent(selection01, 1, FailureHandling.OPTIONAL)
-
-		if (isFound) {
-			return selection01
-		}else {
-			return selection02
-		}
+		return selection01
 	}
 
 	@Keyword
-	public def clickingDynamicElementUpdated(String articleName) {
+	public def clickingDynamicElement(String articleName) {
 
 		TestObject mySelection = foundRealXpath(articleName)
 		boolean isVisible
@@ -74,7 +59,7 @@ public class Carrousel {
 			WebUI.click(findTestObject('Object Repository/Ebay/nextArrow'))
 			isVisible = WebUI.verifyElementVisible(mySelection, FailureHandling.OPTIONAL)
 			count++
-			if (count >= 4) {
+			if (count >= 3) {
 				break
 			}
 		}

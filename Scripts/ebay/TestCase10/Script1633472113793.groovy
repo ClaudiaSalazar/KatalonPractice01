@@ -17,11 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
 CustomKeywords.'kw_browser.Browser.loadbrowser'(GlobalVariable.ebay_url)
 
-CustomKeywords.'kw_ebay.Carrousel.clickingDynamicElement'('Ahorra con Huawei, LG, Google y más')
+CustomKeywords.'kw_ebay.Carrousel.clickingDynamicElementUpdated'('Artículos con ofertas únicas ')
 
-WebUI.delay(5)
+WebUI.delay(1)
 
 WebUI.closeBrowser()
+
